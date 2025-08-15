@@ -1,0 +1,15 @@
+{
+  "name": "Backoffice",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "app",
+  "workspaceFolder": "/var/www",
+  "postCreateCommand": "composer install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "xdebug.php-pack"
+      ]
+    }
+  }
+}
